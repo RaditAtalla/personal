@@ -223,17 +223,34 @@ h3 {
   height: 300px;
   border-radius: 10px;
   position: relative;
+  transition: border 0.25s;
+  border: 2px solid var(--orange-secondary);
+}
+
+.tech-card:hover {
+  border: 2px solid var(--orange-primary);
 }
 
 .tech-card > img {
   width: 250px;
   position: absolute;
   right: -90px;
-  bottom: -70px;
+  bottom: -20px;
+  transition: 1s;
 }
 
-.tech-card > img:nth-child(2) {
-  bottom: -20px;
+.tech-card:first-child:hover > img {
+  rotate: 90deg;
+}
+
+.tech-card:nth-child(2):hover > img,
+.tech-card:nth-child(3):hover > img,
+.tech-card:nth-child(5):hover > img {
+  transform: translateX(-50px);
+}
+
+.tech-card:nth-child(4):hover > img {
+  transform: translate(-15px, -25px);
 }
 
 .tech-card > h4 {
