@@ -144,7 +144,7 @@ nav {
 }
 
 .about-title {
-  width: 400px;
+  flex: 1;
   height: 300px;
   position: relative;
   display: flex;
@@ -183,6 +183,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  flex: 2;
 }
 
 h3 {
